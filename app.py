@@ -5,7 +5,7 @@ picfolder = os.path.join('static','pics')
 app.config['UPLOAD_FOLDER'] = picfolder
 @app.route('/')
 def home():
-	return render_template('space.html')
+	return render_template('index.html')
 
 @app.route('/QA', methods=['GET', 'POST'])
 def QA():
